@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+<p>Hello Sir/Madam {{ name }},<br>
+Acording to Your age and Health issuues ,<br>
+Here are some instructions for you:<br></p>
+<h1> Prescription </h1>
+<table border=10>
+<tr>
+<td><b>Disease</b></td>
+<td>{{obj.disease}}</td>
+</tr>
+<tr>
+<td><b>DO's</b></td>
+<td>{{obj.Dos|linebreaks}}</td>
+</tr>
+<tr>
+<td><b>DONT's</b></td>
+<td>{{obj.Donts|linebreaks}}</td>
+</tr>
+<tr>
+<td><b>Mandatory Checkups</b></td>
+<td>{{obj.checkups|linebreaks}}</td>
+</tr>
+<tr>
+<td><b>Exercises</b></td>
+<td>{{obj.Exercise|linebreaks}}</td>
+</tr>
+
+</table>
+
+</body>
+</html>

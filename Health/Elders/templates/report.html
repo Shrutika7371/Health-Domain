@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <style>  
+  body{
+    background: #83a4d4;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #b6fbff, #83a4d4);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #b6fbff, #83a4d4); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+	}
+  footer{
+        margin-top: 10px;
+  		text-align: center;
+  		padding: 3px;
+		  background-color:white
+  		color: black;
+		}
+  .bgl{
+    margin-top:50px;
+    background:white;
+    border-radius:15px;
+  } 
+  </style>
+</head>
+<body>
+
+
+ 
+<div class="container bgl">
+	<h1 class="text-center"> Prescription </h1>
+  <table class="table table-borderless">
+	
+    <tbody>
+		<tr>
+		<td class="text-center"><h3>Disease</h3></td>
+      <td class="text-left"><h3><b>{{obj.disease}}<b></h3></td>
+</tr>
+
+<tr>
+	<td class="text-center"> <h3>DO's</h3> </td>
+	<td class="text-left">{{obj.Dos|linebreaks}}</td>
+</tr>
+
+<tr>
+	<td class="text-center"> <h3>DONT's</h3></td>
+	<td class="text-left">{{obj.Donts|linebreaks}}</td>
+</tr>
+
+	<td class="text-center"><h3>Mandatory Checkups</h3></td>
+	<td class="text-left">{{obj.checkups|linebreaks}}</td>
+</tr>
+
+<tr>
+	<td class="text-center"><h3>Exercises</h3></td>
+	<td class="text-left">{{obj.Exercise|linebreaks}}</td>
+</tr>
+	 
+</tbody>
+</table>
+
+</div>
+</div>
+</body>
+<footer>
+</footer>
+</html>
